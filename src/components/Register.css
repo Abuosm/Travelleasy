@@ -1,0 +1,139 @@
+.enhanced-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(-45deg, #08142f, #1c2a5d, #08142f);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  padding: 0 50px;
+  background-image: url('DALL·E\ 2025-03-15\ 22.56.30\ -\ A\ futuristic\ smart\ city\ transport\ scene\ with\ modern\ electric\ buses\,\ automated\ ticketing\ systems\,\ and\ neon-lit\ bus\ stops.\ The\ background\ should\ have\ a\ .webp'); /* Replace with your image path */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: black;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.left-section {
+  flex: 1;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+  color: #fff;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.left-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #4ae309;
+}
+
+.left-section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.register-container {
+  flex: 1;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.9); /* Subtle transparency for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.register-button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(90deg, #28a745, #218838);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+.register-button:hover {
+  background: linear-gradient(90deg, #218838, #1e7e34);
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 15px;
+  color: #555;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

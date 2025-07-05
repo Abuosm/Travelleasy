@@ -1,0 +1,186 @@
+/* EnhancedLogin.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Apply background only for the login page */
+.login-page {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(-45deg, #6a11cb, #2575fc, #6a11cb);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  overflow: hidden;
+  padding: 0 50px;
+  background-image: url('DALL·E\ 2025-03-15\ 22.56.30\ -\ A\ futuristic\ smart\ city\ transport\ scene\ with\ modern\ electric\ buses\,\ automated\ ticketing\ systems\,\ and\ neon-lit\ bus\ stops.\ The\ background\ should\ have\ a\ .webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Ensure the background does not apply to other pages */
+body {
+  background: none !important;
+}
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Left Section */
+.left-section {
+  flex: 1;
+  color: #fff;
+  text-align: left;
+  z-index: 2;
+}
+
+.animated-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.animated-subtitle {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.project-prompt {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  animation: slideUp 1.5s ease-in-out;
+}
+
+.project-prompt h2 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.project-prompt p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Right Section */
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 2;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.login-box h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #6a11cb;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(106, 17, 203, 0.5);
+}
+
+.login-button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  box-shadow: 0 0 20px rgba(106, 17, 203, 0.8);
+}
+
+.login-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.register-link {
+  margin-top: 10px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.register-link a {
+  color: #6a11cb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: #ff4d4d;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
