@@ -46,23 +46,6 @@ Coming soon: GIF demo walkthrough of the booking flow and ticket generation 🎬
 
 ---
 
-## 📂 Folder Structure
-
-Travelleasy/
-├── public/
-│ └── tb.webp # Background image
-├── src/
-│ ├── pages/
-│ │ └── TicketBooking.jsx # Main booking component
-│ └── TicketBooking.css # Styling for booking page
-├── package.json
-└── README.md
-
-yaml
-Copy
-Edit
-
----
 
 ## 🧪 API Requirements (Backend not included)
 
