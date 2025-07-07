@@ -16,7 +16,7 @@ Travelleasy is a React-based frontend application designed for seamless bus tick
 
 ## 🎥 Demo Preview
 
-> 📌 [Live Project](https://travelleasy.vercel.app/ticket-booking)
+> 📌 [Live Project](https://travelleasy.vercel.app)
 >
 > ![Screenshot 2025-05-06 220452](https://github.com/user-attachments/assets/02f022e1-412d-4cc1-bad6-b9326d137814)
 
