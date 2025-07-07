@@ -152,7 +152,14 @@ const TicketBooking = () => {
   };
 
   return (
-    <div className="ticket-booking-page">
+    <div className="ticket-booking-page"
+  style={{
+    backgroundImage: "url('/tb.webp')",
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+  }}
+>
       <h2>Karnataka Bus Ticket Booking</h2>
 
       <div className="progress-bar">
