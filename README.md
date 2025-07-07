@@ -1,74 +1,120 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+<h1 align="center">🚌 Travelleasy - Karnataka Bus Ticket Booking</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  A clean, interactive frontend for booking intercity bus tickets across Karnataka.
+  <br>
+  <a href="https://travelleasy.vercel.app/ticket-booking" target="_blank"><strong>🌐 Live Demo →</strong></a>
+</p>
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Overview
 
-### `npm start`
+Travelleasy is a React-based frontend application designed for seamless bus ticket booking. It features a multi-step form, OTP verification, ticket generation with QR code, and PDF download. The interface is modern, responsive, and designed with user experience in mind.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎥 Demo Preview
 
-### `npm test`
+> 📌 [Live Project](https://travelleasy.vercel.app/ticket-booking)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Coming soon: GIF demo walkthrough of the booking flow and ticket generation 🎬
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 🌆 Select source & destination cities from Karnataka
+- 📅 Pick a travel date
+- 📲 Phone number OTP verification
+- 🔐 Secure booking with backend token validation
+- 🧾 Generate & display ticket with unique QR code
+- 📥 Download ticket as PDF (using `html2canvas` and `jsPDF`)
+- 🌈 Clean & modern UI with glassmorphism design
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🧱 Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Area        | Tools Used                             |
+|-------------|----------------------------------------|
+| Frontend    | React, HTML5, CSS3                     |
+| HTTP Client | Axios                                  |
+| PDF Tool    | jsPDF + html2canvas                    |
+| Deployment  | Vercel                                 |
+| Styling     | Custom CSS (glassmorphic UI)           |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📂 Folder Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Travelleasy/
+├── public/
+│ └── tb.webp # Background image
+├── src/
+│ ├── pages/
+│ │ └── TicketBooking.jsx # Main booking component
+│ └── TicketBooking.css # Styling for booking page
+├── package.json
+└── README.md
 
-## Learn More
+yaml
+Copy
+Edit
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🧪 API Requirements (Backend not included)
 
-### Code Splitting
+Although this is only the frontend, it integrates with a backend through these API endpoints:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Endpoint          | Method | Description                    |
+|-------------------|--------|--------------------------------|
+| `/send-otp`       | POST   | Sends OTP to provided phone    |
+| `/verify-otp`     | POST   | Verifies OTP                   |
+| `/create-ticket`  | POST   | Creates ticket, returns QR     |
 
-### Analyzing the Bundle Size
+> ⚠️ Backend must be running at `http://localhost:3000` (or update the `API_BASE_URL` in `TicketBooking.jsx`).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## ⚙️ Installation & Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+# 1. Clone the repo
+git clone https://github.com/Abuosm/Travelleasy.git
+cd Travelleasy
 
-### Advanced Configuration
+# 2. Install dependencies
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# 3. Start the development server
+npm start
+Then, visit: http://localhost:3000/ticket-booking
 
-### Deployment
+🖼️ Sample Ticket Output (with QR)
+<img src="https://i.imgur.com/yoursample.png" alt="Ticket Preview" width="600" />
+🌐 Deployment
+The frontend is deployed using Vercel.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+To deploy your own:
 
-### `npm run build` fails to minify
+bash
+Copy
+Edit
+vercel login
+vercel --prod
+✅ Ensure CORS and proper API endpoints are configured on your backend.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# Travelleasy
->>>>>>> d178d4c6c7a1657ef659558896fea19d18183b8c
+👨‍💻 Author
+Abubakar Osman 
+🚀 GitHub | 📧 abubakerosman56@gmail.com
+
+📄 License
+This project is open-source under the MIT License.
+Feel free to use, modify, and distribute with credit.
+
+❤️ Support
+If you like this project, consider giving it a ⭐ on GitHub!
+Have suggestions or want to collaborate? Open an issue or pull request.
+
