@@ -1,124 +1,116 @@
-<h1 align="center">🚌 Travelleasy - Karnataka Bus Ticket Booking</h1>
+<div align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
+  <img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge" alt="MIT License">
+</div>
+
+<h1 align="center">
+  🚍 Travelleasy Karnataka
+  <br>
+  <span style="font-size: 0.8em;">Seamless Bus Ticket Booking for Karnataka</span>
+</h1>
 
 <p align="center">
-  A clean, interactive frontend for booking intercity bus tickets across Karnataka with OTP verification and QR code generation.
-  <br>
-  <a href="https://travelleasy.vercel.app" target="_blank"><strong>🌐 Live Demo →</strong></a>
+  <a href="https://travelleasy.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/LIVE_DEMO-FF5722?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo">
+  </a>
 </p>
 
----
+![App Screenshot](https://github.com/user-attachments/assets/02f022e1-412d-4cc1-bad6-b9326d137814)
 
-## ✨ Overview
+## 🌟 Key Features
 
-**Travelleasy** is a React-based frontend application designed for secure and seamless bus ticket booking. It features a multi-step booking form, OTP-based user verification, QR code ticket generation, and PDF download support. The UI is responsive, modern, and optimized for a smooth user experience.
+- **Interactive Booking Flow**  
+  📌 Multi-step form with city selection, date picker, and passenger details  
+  🔍 Real-time seat availability visualization  
 
----
+- **Secure Verification**  
+  🔒 OTP-based authentication via Twilio integration  
+  🛡️ JWT token validation for all transactions  
 
-## 🎥 Demo Preview
+- **Digital Ticketing**  
+  🎫 QR-coded e-tickets with unique booking IDs  
+  📄 PDF download capability (mobile-friendly)  
 
-> 📌 [Live Demo](https://travelleasy.vercel.app)
+- **Modern UI**  
+  ✨ Glassmorphism design with responsive layout  
+  🎨 Themed color scheme matching Karnataka tourism  
 
-### 🖼️ Screenshots
+## 🛠️ Technology Stack
 
-1. **Home Page**
-   ![Screenshot-One](https://github.com/user-attachments/assets/02f022e1-412d-4cc1-bad6-b9326d137814)
+| Category       | Technologies Used                          |
+|----------------|--------------------------------------------|
+| Frontend       | React 18, Context API, Custom Hooks        |
+| Styling        | CSS3 (Flexbox/Grid), Glassmorphism Effects |
+| Utilities      | Axios, date-fns, react-icons               |
+| PDF Generation | jsPDF, html2canvas                         |
+| Deployment     | Vercel (CI/CD)                             |
 
-2. **OTP Verification Screen**
-   ![Screenshot-Two](https://github.com/user-attachments/assets/0c45f851-b681-45bb-baf4-87ddac205ace)
+## 📱 Screenshot Gallery
 
-3. **Ticket Booking Form**
-   ![Screenshot-Three](https://github.com/user-attachments/assets/92ce342d-a981-4f63-979a-5d1e103f94fe)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/0c45f851-b681-45bb-baf4-87ddac205ace" width="30%" alt="OTP Screen">
+  <img src="https://github.com/user-attachments/assets/92ce342d-a981-4f63-979a-5d1e103f94fe" width="30%" alt="Booking Form">
+  <img src="https://github.com/user-attachments/assets/736ef89d-97d1-4a8d-ab4e-05b94351a264" width="30%" alt="Ticket Preview">
+</div>
 
-4. **Generated Ticket Preview**
-   ![Screenshot-Four](https://github.com/user-attachments/assets/736ef89d-97d1-4a8d-ab4e-05b94351a264)
+## 🚀 Getting Started
 
-5. **Ticket Download Flow**
-   ![Screenshot-Five](https://github.com/user-attachments/assets/d835e66f-5e01-4afe-8e23-98c50cdf3253)
+### Prerequisites
+- Node.js (v16+)
+- npm/yarn
+- Backend server (for API endpoints)
 
----
-
-## 🚀 Features
-
-- 🗺️ Select source and destination cities across Karnataka
-- 📆 Choose your travel date
-- 📲 OTP-based phone verification (via Twilio)
-- 🔐 Secure ticket booking with JWT validation
-- 🧾 Ticket includes a unique QR code
-- 📥 Download ticket as PDF (`html2canvas` + `jsPDF`)
-- 💎 Beautiful glassmorphic UI (fully responsive)
-
----
-
-## 🧱 Tech Stack
-
-| Area        | Tools Used                             |
-|-------------|----------------------------------------|
-| Frontend    | React, HTML5, CSS3                     |
-| HTTP Client | Axios                                  |
-| PDF Tool    | jsPDF + html2canvas                    |
-| Deployment  | Vercel                                 |
-| Styling     | Custom CSS (glassmorphism theme)       |
-
----
-
-## 🔌 Backend Integration
-
-> ⚠️ You must have the backend running and connected for full functionality.
-
-### API Requirements:
-
-| Endpoint          | Method | Description                    |
-|-------------------|--------|--------------------------------|
-| `/send-otp`       | POST   | Send OTP to user phone number  |
-| `/verify-otp`     | POST   | Verify OTP and return JWT      |
-| `/create-ticket`  | POST   | Book ticket and return QR code |
-
-> 🔧 Make sure to set the correct `API_BASE_URL` in `TicketBooking.jsx`:
-```js
-const API_BASE_URL = "https://travelleasy-backend.onrender.com";
-⚙️ Installation & Usage (Development)
-bash
-Copy
-Edit
-# Clone the repository
+### Installation
+```bash
+# Clone repository
 git clone https://github.com/Abuosm/Travelleasy.git
 cd Travelleasy
 
 # Install dependencies
 npm install
 
+# Configure environment (create .env file)
+echo "REACT_APP_API_BASE_URL=https://your-backend-api.com" > .env
+
 # Start development server
 npm start
-Then, open http://localhost:3000/ticket-booking in your browser.
+🔧 Configuration
+Update API endpoints in src/config.js:
 
-🚀 Deployment
-This frontend is deployed on Vercel.
+javascript
+export const API_CONFIG = {
+  BASE_URL: process.env.REACT_APP_API_BASE_URL,
+  ENDPOINTS: {
+    SEND_OTP: '/send-otp',
+    VERIFY_OTP: '/verify-otp',
+    CREATE_TICKET: '/create-ticket'
+  }
+};
+📚 Documentation
+API Integration Guide
 
-To deploy your own version:
+UI Component Library
 
-bash
-Copy
-Edit
-vercel login
-vercel --prod
-Make sure your backend allows CORS and is reachable from the deployed domain.
+Deployment Checklist
 
-👨‍💻 Author
+
+We welcome contributions! Please follow these steps:
+
+Fork the repository
+
+Create your feature branch (git checkout -b feature/AmazingFeature)
+
+Commit your changes (git commit -m 'Add some AmazingFeature')
+
+Push to the branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+
+📜 License
+Distributed under the MIT License. See LICENSE for more information.
+
+✉️ Contact
 Abubakar Osman Parsung
 📧 abubakerosman56@gmail.com
-🔗 GitHub
-
-📄 License
-This project is licensed under the MIT License.
-You’re free to use, modify, and distribute — just give proper credit.
-
-❤️ Support
-If you found this project helpful:
-
-⭐ Star the repo
-
-🐛 Report bugs
-
-💬 Suggest features
-
-🤝 Contribute
+🔗 GitHub Profile
