@@ -28,7 +28,7 @@
 
 
 body {
-  background-image: url("D:\final project of bca\transport-ticketing-frontend\src\components\tb.webp") !important;
+  background-image: url("/tb.webp") !important;
   background-size: cover !important;
   background-position: center !important;
   background-attachment: fixed !important;
