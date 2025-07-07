@@ -3,7 +3,7 @@
 <p align="center">
   A clean, interactive frontend for booking intercity bus tickets across Karnataka.
   <br>
-  <a href="https://travelleasy.vercel.app/ticket-booking" target="_blank"><strong>🌐 Live Demo →</strong></a>
+  <a href="https://travelleasy.vercel.app" target="_blank"><strong>🌐 Live Demo →</strong></a>
 </p>
 
 ---
