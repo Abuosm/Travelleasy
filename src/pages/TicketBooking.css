@@ -14,9 +14,10 @@
   overflow: hidden;
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(8px);
-  background-image: url('D:\final project of bca\transport-ticketing-frontend\src\components\tb.webp');
+  background-image: url('/tb.webp'); /* ✅ fixed path */
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 
 .ticket-booking-page h2 {
   font-size: 28px;
